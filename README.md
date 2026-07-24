@@ -11,8 +11,8 @@ cloudflare-naf-letter/
 ├── index.html
 ├── README.md
 └── assets/
-    ├── Claudia_de_Luna_signature-2.jpg
-    └── TheGratuitousArpSummary.jpg
+    ├── Claudia_de_Luna_signature.jpg
+    └── TheGratuitousArpSummary.png
 ```
 
 Do not rename these two image files. The HTML already references them exactly as uploaded.
@@ -31,8 +31,8 @@ Make sure these files are together in the same folder:
 
 - `index.html`
 - `README.md`
-- `assets/Claudia_de_Luna_signature-2.jpg`
-- `assets/TheGratuitousArpSummary.jpg`
+- `assets/Claudia_de_Luna_signature.jpg`
+- `assets/TheGratuitousArpSummary.png`
 
 If the images are missing or in the wrong folder, the page will load but those images will not appear.
 
@@ -60,8 +60,8 @@ This is the easiest way if you are new to Cloudflare.
 2. Put `index.html` inside it.
 3. Create a subfolder named `assets`.
 4. Put these uploaded image files inside `assets`:
-   - `Claudia_de_Luna_signature-2.jpg`
-   - `TheGratuitousArpSummary.jpg`
+   - `Claudia_de_Luna_signature.jpg`
+   - `TheGratuitousArpSummary.png`
 5. Put `README.md` in the top-level folder beside `index.html`.
 
 ### Step 4: Upload the folder
@@ -92,8 +92,8 @@ Use this method if you want version control and easy future updates.
 3. Upload:
    - `index.html`
    - `README.md`
-   - `assets/Claudia_de_Luna_signature-2.jpg`
-   - `assets/TheGratuitousArpSummary.jpg`
+   - `assets/Claudia_de_Luna_signature.jpg`
+   - `assets/TheGratuitousArpSummary.png`
 
 ### Step 2: Connect GitHub to Cloudflare
 
@@ -146,8 +146,8 @@ Usually this means one of these is wrong:
 
 The correct filenames are:
 
-- `Claudia_de_Luna_signature-2.jpg`
-- `TheGratuitousArpSummary.jpg`
+- `Claudia_de_Luna_signature.jpg`
+- `TheGratuitousArpSummary.png`
 
 ### The page opens but looks broken
 
@@ -200,8 +200,8 @@ claudia-naf-letter/
 ├── index.html
 ├── README.md
 └── assets/
-    ├── Claudia_de_Luna_signature-2.jpg
-    └── TheGratuitousArpSummary.jpg
+    ├── Claudia_de_Luna_signature.jpg
+    └── TheGratuitousArpSummary.png
 ```
 
 3. Copy the shared `index.html` and `README.md` into the top-level folder.
@@ -217,8 +217,8 @@ If you do not want to use git on the command line yet:
 4. Upload `index.html` and `README.md`.
 5. Create an `assets` folder in the repository.
 6. Upload:
-   - `Claudia_de_Luna_signature-2.jpg`
-   - `TheGratuitousArpSummary.jpg`
+   - `Claudia_de_Luna_signature.jpg`
+   - `TheGratuitousArpSummary.png`
 7. Commit the changes.
 
 ### Upload to GitHub using git on the command line
