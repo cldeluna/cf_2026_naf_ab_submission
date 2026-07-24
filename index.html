@@ -182,6 +182,7 @@
       border: 0;
       z-index: 12;
       cursor: pointer;
+      touch-action: manipulation;
       background: radial-gradient(circle at 32% 28%, #b64e63, var(--wax) 42%, var(--wax-dark) 82%);
       box-shadow:
         inset 0 6px 10px rgba(255,255,255,0.18),
@@ -261,6 +262,9 @@
       position: relative;
       height: 100%;
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      touch-action: pan-y;
       padding: 34px 30px 30px;
     }
 
@@ -374,6 +378,7 @@
       font-size: 14px;
       text-decoration: none;
       cursor: pointer;
+      touch-action: manipulation;
       backdrop-filter: blur(8px);
     }
 
@@ -415,6 +420,15 @@
       .letter-scroll { padding: 24px 20px 22px; }
       .letter p { font-size: 15px; }
       .crest { flex-direction: column; align-items: flex-start; }
+    }
+
+    /* Touch devices (iPhone/iPad Safari): a 3D-transformed ancestor
+       (perspective + preserve-3d) can make nested overflow:auto content
+       unresponsive to touch-scroll gestures. Flatten it so the letter
+       scrolls reliably; the flap-flip animation just loses its 3D tilt. */
+    @media (hover: none) and (pointer: coarse) {
+      .stage { perspective: none; }
+      .envelope { transform-style: flat; }
     }
   </style>
 </head>
